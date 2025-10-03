@@ -1,3 +1,14 @@
 header{
-  font-size: 80px;
+}
+
+.Greeting{
+  text-align: center;
+}
+
+.About_Us{
+  text-align: left;
+}
+
+.What_We_Do{
+  text-align: right;
 }
