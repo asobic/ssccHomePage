@@ -4,6 +4,7 @@
 
 .Buttons{
   display: flex;
+  cursor: pointer;
 }
 
 body{
