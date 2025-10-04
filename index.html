@@ -10,7 +10,7 @@
  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
  <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
  <![endif]-->
- <script src="sample.js"></script>
+ <script src="Node.js"></script>
  <link rel="stylesheet" href="style.css">
  </head>
  
@@ -22,13 +22,15 @@
   <h1>SSCC</h1>
   <h1>渋渋コンピュータ部</h1>
   <h2>ShibuShibuComputerClub</h2>
+  <hr>
+  <button type = "Button" onclick = ToMain()>Home</button>
  </header>
 
  <!----- ヘッダー END ----->
  
  <!----- メインコンテンツ ----->
   <main>
-  <div class = "Home">
+  <div id = "Home">
    <h3>Home</h3>
    <article class = "Greeting">
     <h4>Greeting</h4>
@@ -44,7 +46,7 @@
    </article>
   </div>
 
-  <div class = "The_Day_Of_SSCC">
+  <div id = "The_Day_Of_SSCC">
    <h3>SSCCの日常</h3>
    <article class = "overview">
     <h4>概要</h4>
@@ -52,7 +54,7 @@
    </article>
   </div>
 
-  <div class = "Page_For_Members>
+  <div id = "Page_For_Members>
    <h3>部員用ページ<h3>
    <p></p>
    
