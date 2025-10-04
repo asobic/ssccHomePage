@@ -20,4 +20,4 @@ document.addEventListener("DOMContentLoaded", function () {
     DayOfSSCC.hidden = true;
     RoomOfMembers.hidden = false;
   }
-}
+})
