@@ -17,7 +17,7 @@ body{
     background-origin: initial;
     background-clip: initial;
     background-color: transparent;
-    background: linear-gradient(to top, rgba(217, 175, 217, 0.7) 0%, rgba(151, 217, 225, 0.7) 100%);
+      background: radial-gradient(at 20% 70%, #83cde7, transparent), radial-gradient(at 50% 30%, #f480d5, transparent), radial-gradient(at 80% 80%, #b7f179, transparent);;
   background-attachment: fixed;
   border: 0;
   color: white;
