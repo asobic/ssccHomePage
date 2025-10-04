@@ -5,11 +5,10 @@
 .Buttons{
   display: flex;
   color: white;
+  cursor: pointer;
 }
 
 body{
-    cursor: pointer;
-  
     background: transparent;
     background-image: initial;
     background-position-x: initial;
