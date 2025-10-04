@@ -5,7 +5,7 @@ const RoomOfMembers = document.getElementById("Page_For_Members");
 function ToHome(){
 　HomeText.hidden = false;
   DayOfSSCC.hidden = true;
-  RoomOfMembers = true;
+  RoomOfMembers.hidden = true;
 }
 
 function ToDayOfSSCC(){
