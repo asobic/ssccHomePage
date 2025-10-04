@@ -13,7 +13,7 @@ body{
     background-origin: initial;
     background-clip: initial;
     background-color: transparent;
-    background: linear-gradient(to top, rgba(217, 175, 217, 0.7) 0%, rgba(151, 217, 225, 0.7) 100%)
+    background: linear-gradient(to top, rgba(217, 175, 217, 0.7) 0%, rgba(151, 217, 225, 0.7) 100%);
   background-attachment: fixed;
   border: 0;
   color: white;
