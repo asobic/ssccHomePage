@@ -9,6 +9,8 @@
 }
 button{
   cursor: pointer;
+    background: #eee;
+    border-radius: 3px;
 }
 body{
     background: transparent;
