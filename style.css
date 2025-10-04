@@ -4,11 +4,13 @@
 
 .Buttons{
   display: flex;
-  cursor: pointer;
+
 }
 
 body{
-  background: transparent;
+    cursor: pointer;
+  
+    background: transparent;
     background-image: initial;
     background-position-x: initial;
     background-position-y: initial;
