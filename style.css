@@ -1,17 +1,4 @@
-.heading{
-  display: flex;
-}
 
-.Buttons{
-  display: flex;
-  color: white;
-  
-}
-button{
-  cursor: pointer;
-    background: #eee;
-    border-radius: 3px;
-}
 body{
     background: transparent;
     background-image: initial;
@@ -28,6 +15,17 @@ body{
   border: 0;
   color: white;
   overflow: auto 
+}
+.heading{
+  display: flex;
+}
+
+.Buttons{
+  display: flex;
+  color: white;
+　　 cursor: pointer;
+    background: #eee;
+    border-radius: 3px;
 }
 
 .Greeting{
