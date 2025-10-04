@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const HomeText = document.getElementById('Home');
   const DayOfSSCC = document.getElementById("The_Day_Of_SSCC");
   const RoomOfMembers = document.getElementById("Page_For_Members");
-  const Acticity = document.getElementById("Activity");
+  const Activity = document.getElementById("Activity");
   
   window.ToHome = function(){
     HomeText.hidden = false;
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
     Activity.hidden = true;
   }
 
-  window.ToActicity = function(){
+  window.ToActivity = function(){
     HomeText.hidden = true;
     DayOfSSCC.hidden = true;
     RoomOfMembers = true;
