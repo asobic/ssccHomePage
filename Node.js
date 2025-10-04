@@ -15,7 +15,7 @@ function ToDayOfSSCC(){
   RoomOfMembers.hidden = true;
 }
 
-function ToRoomOfMenbers{
+function ToRoomOfMenbers(){
   HomeText.hidden = true;
   DayOfSSCC.hidden = true;
   RoomOfMembers.hidden = false;
