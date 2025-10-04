@@ -4,13 +4,19 @@ const RoomOfMembers = document.getElementById("Page_For_Members");
 
 function ToHome(){
 　HomeText.hidden = false;
-  }
+  DayOfSSCC.hidden = true;
+  RoomOfMembers = true;
+}
 
 function ToDayOfSSCC(){
+  HomeText.hidden = true;
   DayOfSSCC.hidden = false;
+  RoomOfMembers.hidden = true;
 }
 
 function ToRoomOfMenbers{
+  HomeText.hidden = true;
+  DayOfSSCC.hidden = true;
   RoomOfMembers.hidden = false;
 }
   
