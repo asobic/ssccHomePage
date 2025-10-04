@@ -20,12 +20,12 @@ body{
   display: flex;
 }
 
-.Buttons{
+button{
   display: flex;
   color: white;
-　　 cursor: pointer;
-    background: #eee;
-    border-radius: 3px;
+　cursor: pointer;
+　background: #eee;
+　border-radius: 3px;
 }
 
 .Greeting{
