@@ -1,6 +1,6 @@
 
 body{
-    background: transparent;
+    /*background: transparent;
     background-image: initial;
     background-position-x: initial;
     background-position-y: initial;
@@ -9,7 +9,7 @@ body{
     background-attachment: initial;
     background-origin: initial;
     background-clip: initial;
-    background-color: transparent;
+    background-color: transparent;*/
       background: radial-gradient(at 20% 70%, #83cde7, transparent), radial-gradient(at 50% 30%, #f480d5, transparent), radial-gradient(at 80% 80%, #b7f179, transparent);
   background-attachment: fixed;
   border: 0;
