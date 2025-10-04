@@ -3,7 +3,6 @@ const DayOfSSCC = document.getElementById("The_Day_Of_SSCC");
 const RoomOfMembers = document.getElementById("Page_For_Members");
 
 function ToHome(){
-  document.write("<h1>HTMLタグも使えます</h1>");
 　HomeText.hidden = false;
   DayOfSSCC.hidden = true;
   RoomOfMembers = true;
