@@ -3,19 +3,19 @@ document.addEventListener("DOMContentLoaded", function () {
   const DayOfSSCC = document.getElementById("The_Day_Of_SSCC");
   const RoomOfMembers = document.getElementById("Page_For_Members");
   
-  function ToHome(){
+  window.ToHome = function(){
   　HomeText.hidden = false;
     DayOfSSCC.hidden = true;
     RoomOfMembers.hidden = true;
   }
   
-  function ToDayOfSSCC(){
+  window.ToDayOfSSCC = function(){
     HomeText.hidden = true;
     DayOfSSCC.hidden = false;
     RoomOfMembers.hidden = true;
   }
   
-  function ToRoomOfMenbers(){
+  window.ToRoomOfMembers = function(){
     HomeText.hidden = true;
     DayOfSSCC.hidden = true;
     RoomOfMembers.hidden = false;
