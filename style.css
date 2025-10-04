@@ -2,6 +2,10 @@
   display: flex;
 }
 
+.Buttons{
+  display: flex;
+}
+
 body{
   background: transparent;
     background-image: initial;
