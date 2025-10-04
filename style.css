@@ -13,6 +13,8 @@ body{
     background-origin: initial;
     background-clip: initial;
     background-color: transparent;
+  background-color: black;
+  border: 0;
   color: white;
 }
 
