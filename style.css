@@ -1,6 +1,9 @@
 .heading{
   display: flex;
 }
+h1{
+  font-size: 80px;
+}
 
 .Buttons{
   display: flex;
