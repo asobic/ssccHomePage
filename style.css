@@ -19,7 +19,7 @@ body{
 }
 body {
   background: 
-    radial-gradient(at 20% 70%, #83cde7, transparent),
+    radial-gradient(at 20% 70%, #b0c4de, transparent),
     radial-gradient(at 50% 30%, #f480d5, transparent), 
     radial-gradient(at 80% 80%, #b7f179, transparent);;
   background-attachment: fixed;
