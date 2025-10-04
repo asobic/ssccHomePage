@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const RoomOfMembers = document.getElementById("Page_For_Members");
   
   window.ToHome = function(){
-  　HomeText.hidden = false;
+    HomeText.hidden = false;
     DayOfSSCC.hidden = true;
     RoomOfMembers.hidden = true;
   }
