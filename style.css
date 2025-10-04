@@ -26,9 +26,6 @@ body{
   color: white;
   overflow: auto 
 }
-p{
-  width: 55em;
-}
 
 .Greeting{
   text-align: center;
