@@ -5,9 +5,11 @@
 .Buttons{
   display: flex;
   color: white;
+  
+}
+button{
   cursor: pointer;
 }
-
 body{
     background: transparent;
     background-image: initial;
