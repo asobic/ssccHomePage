@@ -49,4 +49,7 @@ a{
 
 footer{
     background-color: navy;
+    background-size: cover;
+    padding: 8px;
+    color: white;
 }
