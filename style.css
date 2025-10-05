@@ -15,6 +15,7 @@ body{
   border: 0;
   color: white;
   overflow: auto */
+  background-size: cover;
 }
 .heading{
   display: flex;
