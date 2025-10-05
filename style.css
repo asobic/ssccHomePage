@@ -22,7 +22,7 @@ body{
 
 button{
   display: flex;
-  color: white;
+  color: black;
 　cursor: pointer;
 　background: #eee;
 　border-radius: 3px;
