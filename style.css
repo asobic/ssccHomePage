@@ -54,3 +54,9 @@ footer{
     padding-left: 24px;
     color: white;
 }
+
+@media (max-width: 414px) {
+    .Buttons{
+        flex-direction: column;
+    }
+}
