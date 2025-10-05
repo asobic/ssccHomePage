@@ -21,13 +21,15 @@ body{
 }
 
 button{
-  display: flex;
+
   color: black;
 　cursor: pointer;
 　background: #eee;
 　border-radius: 3px;
 }
-
+.Buttons{
+  display: flex;
+}
 .Greeting{
   text-align: center;
 }
