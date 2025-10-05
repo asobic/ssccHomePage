@@ -28,6 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
   window.ToActivity = function(){
     HomeText.hidden = true;
     DayOfSSCC.hidden = true;
-    RoomOfMembers = true;
+    RoomOfMembers.hidden = true;
     Activity.hidden = false;
 };
+});
