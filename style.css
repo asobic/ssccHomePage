@@ -50,6 +50,7 @@ a{
 footer{
     background-color: navy;
     background-size: cover;
-    padding: 8px;
+    padding-right: 24px;
+    padding-left: 24px;
     color: white;
 }
