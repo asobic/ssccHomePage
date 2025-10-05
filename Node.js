@@ -30,4 +30,4 @@ document.addEventListener("DOMContentLoaded", function () {
     DayOfSSCC.hidden = true;
     RoomOfMembers = true;
     Activity.hidden = false;
-});
+};
