@@ -69,3 +69,6 @@ footer{
   border-radius: 2px;
   color: white;
 }
+.menutab{
+  display: none;
+}
