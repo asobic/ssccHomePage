@@ -54,3 +54,17 @@ footer{
     padding-left: 24px;
     color: white;
 }
+.menu-icon {
+    width: 30px;        
+  height: 22px;       
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.menu-icon span {
+  display: block;
+  height: 4px;
+  background-color: #333;
+  border-radius: 2px;
+}
