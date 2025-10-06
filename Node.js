@@ -1,4 +1,10 @@
-document.addEventListener("DOMContentLoaded", function () {
+  const hamburger = document.getElementById('hamburger');
+  const navMenu = document.getElementById('nav-menu');
+
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('open');
+    navMenu.classList.toggle('active');
+  });
   const HomeText = document.getElementById('Home');
   const DayOfSSCC = document.getElementById("The_Day_Of_SSCC");
   const RoomOfMembers = document.getElementById("Page_For_Members");
@@ -38,4 +44,3 @@ document.addEventListener("DOMContentLoaded", function () {
     RoomOfMembers.hidden = true;
     Activity.hidden = false;
 };
-});
