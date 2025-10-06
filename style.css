@@ -71,4 +71,6 @@ footer{
 }
 .menutab a{
   display: none;
+  display: flex;
+  flex-direction: column;
 }
