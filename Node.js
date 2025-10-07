@@ -41,10 +41,10 @@
     Activity.hidden = false;
 };
   Menuicon.addEventListener('click', function() {
-    if (menutab.style.display === 'none') {
-        menutab.style.display = 'block';
+    if (Menutab.style.display === 'none') {
+        Menutab.style.display = 'block';
     } else {
-        menutab.style.display = 'none';
+        Menutab.style.display = 'none';
     }
 });
 
