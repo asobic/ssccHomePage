@@ -70,7 +70,8 @@ footer{
   color: white;
 }
 .menutab a{
-  display: none;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
+  display: none;
 }
+
