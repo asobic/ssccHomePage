@@ -75,7 +75,7 @@ footer{
     display: none;
      width: 30vw;
     background: white;
-    
+    padding: 5px;
 }
 .menutab a{
   display: flex;
