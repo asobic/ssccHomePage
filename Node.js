@@ -43,8 +43,10 @@
   Menuicon.addEventListener('click', function() {
     if (Menutab.style.display === 'none') {
         Menutab.style.display = 'block';
+        alert('test');
     } else {
         Menutab.style.display = 'none';
+        alert('test');
     }
 });
 
