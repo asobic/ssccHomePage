@@ -2,6 +2,9 @@
   const DayOfSSCC = document.getElementById("The_Day_Of_SSCC");
   const RoomOfMembers = document.getElementById("Page_For_Members");
   const Activity = document.getElementById("Activity");
+  const Menutab = document.getElementById('menutab');
+  const Menuicon = document.getElementById('menuicon');
+
 
   window.onload =function(){
     HomeText.hidden = false;
@@ -37,3 +40,11 @@
     RoomOfMembers.hidden = true;
     Activity.hidden = false;
 };
+  Menuicon.addEventListener('click', function() {
+    if (menutab.style.display === 'none') {
+        menutab.style.display = 'block';
+    } else {
+        menutab.style.display = 'none';
+    }
+});
+
