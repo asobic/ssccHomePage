@@ -49,9 +49,7 @@ button{
   text-align: right;
 }
 
-a{
-    color: blue;
-}
+
 
 footer{
     background-color: navy;
@@ -61,7 +59,7 @@ footer{
     color: white;
 }
 .menu-icon {
-    width: 30px;        
+    width: 40px;        
   height: 22px;       
   display: flex;
   flex-direction: column;
