@@ -69,9 +69,13 @@ footer{
   border-radius: 2px;
   color: white;
 }
+.menutab{
+    display: none;
+}
 .menutab a{
   display: flex;
   flex-direction: column; 
-  display: none;
+  text-decoration: none;
+
 }
 
