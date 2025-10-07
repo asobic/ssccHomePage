@@ -71,7 +71,9 @@ footer{
 }
 .menutab{
     display: none;
+     width: 30%vw;
     background: white;
+    
 }
 .menutab a{
   display: flex;
