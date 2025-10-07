@@ -49,13 +49,4 @@
  
     }
 });
-  Menuicon.addEventListener('touchend', function() {
-    if (Menutab.style.display === 'block') {
-        Menutab.style.display = 'none';
 
-        
-    } else {
-        Menutab.style.display = 'block';
-      
-    }
-});
