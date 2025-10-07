@@ -59,7 +59,7 @@ footer{
     color: white;
 }
 .menu-icon {
-    width: 40px;        
+  min-width: 40px;        
   height: 22px;       
   display: flex;
   flex-direction: column;
