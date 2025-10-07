@@ -50,4 +50,14 @@
         alert(123456789);
     }
 });
+  Menuicon.addEventListener('touchend', function() {
+    if (Menutab.style.display === 'none') {
+        Menutab.style.display = 'block';
+        alert(123456789);
+        
+    } else {
+        Menutab.style.display = 'none';
+        alert(123456789);
+    }
+});
 
