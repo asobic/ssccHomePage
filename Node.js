@@ -43,21 +43,21 @@
   Menuicon.addEventListener('click', function() {
     if (Menutab.style.display === 'none') {
         Menutab.style.display = 'block';
-        alert(itsnone);
+        alert("itsnone");
         
     } else {
         Menutab.style.display = 'none';
-        alert(itsblock);
+        alert("itsblock");
     }
 });
   Menuicon.addEventListener('touchend', function() {
     if (Menutab.style.display === 'none') {
         Menutab.style.display = 'block';
-        alert(itsnone);
+        alert("itsnone");
         
     } else {
         Menutab.style.display = 'none';
-        alert(itsblock);
+        alert("itsblock");
     }
 });
 
