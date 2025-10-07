@@ -53,11 +53,11 @@
   Menuicon.addEventListener('touchend', function() {
     if (Menutab.style.display === 'none') {
         Menutab.style.display = 'block';
-        alert(123456789);
+        alert(itsnone);
         
     } else {
         Menutab.style.display = 'none';
-        alert(123456789);
+        alert(itsblock);
     }
 });
 
