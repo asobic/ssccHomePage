@@ -41,22 +41,21 @@
     Activity.hidden = false;
 };
   Menuicon.addEventListener('click', function() {
-    if (Menutab.style.display === 'none') {
-        Menutab.style.display = 'block';
+    if (Menutab.style.display === 'block') {
+        Menutab.style.display = 'none';
         
     } else {
-        Menutab.style.display = 'none';
+        Menutab.style.display = 'block';
  
     }
 });
   Menuicon.addEventListener('touchend', function() {
-    if (Menutab.style.display === 'none') {
-        Menutab.style.display = 'block';
+    if (Menutab.style.display === 'block') {
+        Menutab.style.display = 'none';
 
         
     } else {
-        Menutab.style.display = 'none';
+        Menutab.style.display = 'block';
       
     }
 });
-
