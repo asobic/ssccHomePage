@@ -62,6 +62,7 @@ footer{
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
+  padding: 5px;
 }
 .menu-icon span {
   display: block;
@@ -75,7 +76,7 @@ footer{
     display: none;
      width: 30vw;
     background: white;
-    padding: 5px;
+    
 }
 .menutab a{
   display: flex;
