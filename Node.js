@@ -38,15 +38,9 @@
     HomeText.hidden = true;
     DayOfSSCC.hidden = true;
     RoomOfMembers.hidden = true;
-    Activity.hidden = false;
-};
-  Menuicon.addEventListener('click', function() {
-    if (Menutab.style.display === 'block') {
-        Menutab.style.display = 'none';
-        
-    } else {
-        Menutab.style.display = 'block';
- 
-    }
+    Activity.
+}
+Menuicon.addEventListener('click', function() {
+  Menutab.classList.toggle('show');
 });
 
