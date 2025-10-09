@@ -75,7 +75,11 @@ footer{
   color: white;
 }
 .menutab{
-    display: none;
+    display: block;              
+  max-height: 0;               
+  overflow: hidden;            /* はみ出した部分を隠す */
+  opacity: 0;                  /*透明*/
+  transition: max-height 0.4s ease, opacity 0.4s ease;
      width: 30vw;
     background: white;
 }
@@ -87,6 +91,9 @@ footer{
   margin-bottom: 16px;
   margin-top: 16px;
 }
-
+.menutab.show {
+  max-height: 200px;           
+  opacity: 1;                  
+}
 
 
