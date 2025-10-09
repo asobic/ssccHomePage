@@ -1,22 +1,10 @@
 body{
-  font-family: sans-serif;
-    /*background: transparent;
-    background-image: initial;
-    background-position-x: initial;
-    background-position-y: initial;
-    background-size: initial;
-    background-repeat: initial;
-    background-attachment: initial;
-    background-origin: initial;
-    background-clip: initial;
-    background-color: transparent;*/
-      background: radial-gradient(at 20% 70%, #83cde7, transparent), radial-gradient(at 50% 30%, #f480d5, transparent), radial-gradient(at 80% 80%, #b7f179, transparent);
-  /*background-attachment: fixed;
-  border: 0;
-  color: white;
-  overflow: auto */
+  background: radial-gradient(at 20% 70%, #83cde7, transparent),
+              radial-gradient(at 50% 30%, #f480d5, transparent),
+              radial-gradient(at 80% 80%, #b7f179, transparent);
   background-size: cover;
 }
+
 .heading{
   display: flex;
 }
@@ -29,14 +17,11 @@ button{
   font-size: 16px;
   cursor: pointer;
 }
-/* 画面幅が600px以下の場合のスタイル */
-@media (max-width: 750px) {
-.Buttons button{
-    display:none;
-  }
+
 .Buttons{
   display: flex;
 }
+
 .Greeting{
   text-align: center;
 }
@@ -49,24 +34,27 @@ button{
   text-align: right;
 }
 
-
+a{
+  color: blie;
+}
 
 footer{
-    background-color: navy;
-    background-size: cover;
-    padding-right: 24px;
-    padding-left: 24px;
-    color: white;
+  background-color: navy;
+  background-size: cover;
+  padding-right: 24px;
+  padding-left: 24px;
+  color: white;
 }
+
 .menu-icon {
-  width: 30px;        
-  height: 22px;       
+  width: 30px;
+  height: 22px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
-  padding: 5px;
 }
+
 .menu-icon span {
   display: block;
   height: 4px;
@@ -74,28 +62,13 @@ footer{
   border-radius: 2px;
   color: white;
 }
+
 .menutab{
-    display: block;              
-  max-height: 0;               
-  overflow: hidden;            /* はみ出した部分を隠す */
-  opacity: 0;                  /*透明*/
-  transition: max-height 0.4s ease, opacity 0.4s ease;
-     width: 30vw;
-    background: white;
+  display: none;
 }
+
 .menutab a{
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   text-decoration: none;
-  text-align: center;
-  margin-bottom: 16px;
-  margin-top: 16px;
-  max-font-size: 20px;
-  color:blue;
 }
-.menutab.show {
-  max-height: 200px;           
-  opacity: 1;                  
-}
-
-
