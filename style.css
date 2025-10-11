@@ -67,10 +67,12 @@ footer{
 
 .menutab{
   display: none;
+  background: white;
 }
 
 .menutab a{
   display: flex;
   flex-direction: column;
   text-decoration: none;
+   padding: 10px;
 }
