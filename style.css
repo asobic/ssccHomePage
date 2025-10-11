@@ -68,6 +68,7 @@ footer{
 .menutab{
   display: none;
   background: white;
+  max-width: 30vw;
 }
 
 .menutab a{
