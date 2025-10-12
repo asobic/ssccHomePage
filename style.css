@@ -68,9 +68,14 @@ footer{
 
 .menutab{
   display: none;
+  position: fixed;         /*ページ全体に固定 */
+  top: 0;
+  left: 0;
+  width: 100vw;        
+  height: 100vh;          
   background: white;
-  width:100vw;
-  height:100vw;
+  z-index: 1000;           /* 他の要素より前に出す */
+  overflow-y: auto;        /* 内容が多いときスクロールできるように */
 }
 
 .menutab a{
