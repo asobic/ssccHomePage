@@ -81,16 +81,17 @@ footer{
   margin-right: 10%;
   cursor: pointer;
 }
+
+.yokonarabiheader {
+  display: flex;
+  justify-content: space-between;  
+  align-items: top; 
+  width: 100%;
+}
 header img{
   cursor: pointer;
   display: flex;
   justify-content: center;
   max-width: 70vw;
   height: auto;
-}
-.yokonarabiheader {
-  display: flex;
-  justify-content: space-between;  
-  align-items: top; 
-  width: 100%;
 }
