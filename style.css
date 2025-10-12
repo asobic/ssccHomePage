@@ -87,6 +87,6 @@ header img{
 .yokonarabiheader {
   display: flex;
   justify-content: space-between;  
-  align-items: center; 
+  align-items: top; 
   width: 100%;
 }
