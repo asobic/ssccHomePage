@@ -47,9 +47,7 @@ footer{
   padding-left: 24px;
   color: white;
 }
-.menus{
-  text-align: right;
-}
+
 .menu-icon {
   width: 30px;
   height: 22px;
@@ -86,6 +84,9 @@ header img{
   display: flex;
   justify-content: center;
 }
-.yokonarabiheader{
+.yokonarabiheader {
   display: flex;
+  justify-content: space-between;  
+  align-items: center; 
+  width: 100%;
 }
