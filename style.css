@@ -69,7 +69,8 @@ footer{
 .menutab{
   display: none;
   background: white;
-  max-width: 30vw;
+  width:100vw;
+  height:100vw;
 }
 
 .menutab a{
@@ -77,12 +78,15 @@ footer{
   flex-direction: column;
   text-decoration: none;
   padding: 10px;
+  margin-right: 10%;
   cursor: pointer;
 }
 header img{
   cursor: pointer;
   display: flex;
   justify-content: center;
+  max-width: 70vw;
+  height: auto;
 }
 .yokonarabiheader {
   display: flex;
