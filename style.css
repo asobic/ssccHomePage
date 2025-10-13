@@ -55,6 +55,7 @@ footer{
   cursor: pointer;
   padding: 5px;
   z-index: 9999;
+  position: fixed; 
 }
 
 .menu-icon span {
@@ -64,6 +65,7 @@ footer{
   border-radius: 2px;
   color: white;
   z-index: 9999;
+  position: fixed; 
 }
 
 .menutab{
