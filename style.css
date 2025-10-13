@@ -87,6 +87,7 @@ footer{
   padding: 10px;
   margin-right: 10%;
   cursor: pointer;
+  font-size: clamp(16px, 5vw, 28px); 
 }
 
 .yokonarabiheader {
