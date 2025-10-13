@@ -17,6 +17,7 @@ window.ToHome = function(){
   DayOfSSCC.hidden = true;
   RoomOfMembers.hidden = true;
   Activity.hidden = true;
+  Menutab.style.display = 'none';
 }
 
 window.ToDayOfSSCC = function(){
@@ -24,6 +25,7 @@ window.ToDayOfSSCC = function(){
   DayOfSSCC.hidden = false;
   RoomOfMembers.hidden = true;
   Activity.hidden = true;
+  Menutab.style.display = 'none';
 }
 
 window.ToRoomOfMembers = function(){
@@ -31,6 +33,7 @@ window.ToRoomOfMembers = function(){
   DayOfSSCC.hidden = true;
   RoomOfMembers.hidden = false;
   Activity.hidden = true;
+  Menutab.style.display = 'none';
 }
 
 window.ToActivity = function(){
@@ -38,6 +41,7 @@ window.ToActivity = function(){
   DayOfSSCC.hidden = true;
   RoomOfMembers.hidden = true;
   Activity.hidden = false;
+  Menutab.style.display = 'none';
 }
 
 Menuicon.addEventListener('click', function() {
