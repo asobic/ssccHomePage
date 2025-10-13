@@ -84,8 +84,8 @@ footer{
   display: flex;
   flex-direction: column;
   text-decoration: none;
-  padding: 10px;
-  margin-right: 10%;
+  padding: 20px;
+  margin: 10vw;
   cursor: pointer;
   font-size: clamp(16px, 5vw, 28px); 
 }
