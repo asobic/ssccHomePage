@@ -36,9 +36,7 @@ button{
   text-align: right;
 }
 
-a{
-  color: blie;
-}
+
 
 footer{
   background-color: navy;
@@ -85,7 +83,7 @@ footer{
   flex-direction: column;
   text-decoration: none;
   padding: 20px;
-  margin: 10vw;
+  margin: 5vw;
   cursor: pointer;
   font-size: clamp(16px, 5vw, 28px); 
 }
