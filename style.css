@@ -104,3 +104,9 @@ header img{
   max-width: 70vw;
   height: auto;
 }
+
+@media screen and (max-width: 768px) {
+  .Buttons {
+    display: none;
+  }
+}
