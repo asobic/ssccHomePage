@@ -13,16 +13,17 @@
   }
 });
 
-    function showSection(sectionId) {
+    function showSection(sectionId, bool) {
       const sections = [Home, DayOfSSCC, Activity, RoomOfMembers];
       sections.forEach((sec) => (sec.hidden = sec.id !== sectionId));
-      Menuicon.style.display = 'none';
+      if (bool){
+        Menuicon.style.display = 'none';}
     }
 
-    showSection("Home");
+    showSection("Home",False);
 
-    window.ToHome = () => showSection("Home");
-    window.ToDayOfSSCC = () => showSection("DayOfSSCC");
-    window.ToRoomOfMembers = () => showSection("RoomOfMembers");
-    window.ToActivity = () => showSection("Activity");
+    window.ToHome = () => showSection("Home",True);
+    window.ToDayOfSSCC = () => showSection("DayOfSSCC",True);
+    window.ToRoomOfMembers = () => showSection("RoomOfMembers",True);
+    window.ToActivity = () => showSection("Activity",True);
   })();
