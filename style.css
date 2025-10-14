@@ -45,29 +45,24 @@ footer{
   padding-left: 24px;
   color: white;
 }
-
-.menu-icon {
-  width: 30px;
-  height: 22px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  cursor: pointer;
-  padding: 5px;
+  .menu-icon {
+  width: 60px;
+  height: 44px;
+  padding: 10px;
   z-index: 9999;
   position: fixed; 
-  top: 16px;
-  right: 16px;
+  top: 32px;
+  right: 32px;
 }
 
 .menu-icon span {
   display: block;
-  height: 4px;
+  height: 8px;
   background-color: #333;
-  border-radius: 2px;
+  border-radius: 4px;
   color: white;
-  z-index: 9999;
-}
+  z-index: 999
+
 
 .menutab{
   display: none;
@@ -109,4 +104,26 @@ header img{
   .Buttons {
     display: none;
   }
+.menu-icon {
+  width: 30px;
+  height: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 5px;
+  z-index: 9999;
+  position: fixed; 
+  top: 16px;
+  right: 16px;
+}
+
+.menu-icon span {
+  display: block;
+  height: 4px;
+  background-color: #333;
+  border-radius: 2px;
+  color: white;
+  z-index: 9999;
+}
 }
