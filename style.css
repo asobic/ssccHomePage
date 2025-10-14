@@ -45,8 +45,8 @@ footer{
   padding-left: 24px;
   color: white;
 }
-menu-icon {
-  width: 30px;
+.menu-icon {
+  width:30px;
   height: 22px;
   display: flex;
   flex-direction: column;
@@ -74,7 +74,7 @@ menu-icon {
   width: 500vw;        
   height: 500vh;          
   background: white;
-  z-index: 1000;           /* 他の要素より前に出す */
+  z-index: 10000;           /* 他の要素より前に出す */
   overflow-y: auto;        /* 内容が多いときスクロールできるように */
 }
 
