@@ -3,7 +3,6 @@
     const DayOfSSCC = document.getElementById("The_Day_Of_SSCC");
     const Activity = document.getElementById("Activity");
     const RoomOfMembers = document.getElementById("Page_For_Members");
-    const UsefulURL = document.getElementById("usefulURL");
     const Menutab = document.getElementById('menutab');
     const Menuicon = document.getElementById('menuicon');
    Menuicon.addEventListener('click', function() {
@@ -15,7 +14,7 @@
 });
 
     function showSection(sectionId) {
-      const sections = [Home, DayOfSSCC, Activity, , RoomOfMembers];
+      const sections = [Home, DayOfSSCC, Activity, RoomOfMembers];
       sections.forEach((sec) => (sec.hidden = sec.id !== sectionId));
       Menuicon.style.display = 'none';
     }
