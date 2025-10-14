@@ -50,9 +50,7 @@ footer{
   height: 44px;
   padding: 10px;
   z-index: 9999;
-  position: fixed; 
-  top: 32px;
-  right: 32px;
+
 }
 
 .menu-icon span {
@@ -114,9 +112,6 @@ header img{
   cursor: pointer;
   padding: 5px;
   z-index: 9999;
-  position: fixed; 
-  top: 16px;
-  right: 16px;
 }
 
 .menu-icon span {
