@@ -1,53 +1,29 @@
-const HomeText = document.getElementById('Home');
-const DayOfSSCC = document.getElementById("The_Day_Of_SSCC");
-const RoomOfMembers = document.getElementById("Page_For_Members");
-const Activity = document.getElementById("Activity");
-const Menutab = document.getElementById('menutab');
-const Menuicon = document.getElementById('menuicon');
-
-window.onload = function() {
-  HomeText.hidden = false;
-  DayOfSSCC.hidden = true;
-  RoomOfMembers.hidden = true;
-  Activity.hidden = true;
-}
-
-window.ToHome = function(){
-  HomeText.hidden = false;
-  DayOfSSCC.hidden = true;
-  RoomOfMembers.hidden = true;
-  Activity.hidden = true;
-  Menutab.style.display = 'none';
-}
-
-window.ToDayOfSSCC = function(){
-  HomeText.hidden = true;
-  DayOfSSCC.hidden = false;
-  RoomOfMembers.hidden = true;
-  Activity.hidden = true;
-  Menutab.style.display = 'none';
-}
-
-window.ToRoomOfMembers = function(){
-  HomeText.hidden = true;
-  DayOfSSCC.hidden = true;
-  RoomOfMembers.hidden = false;
-  Activity.hidden = true;
-  Menutab.style.display = 'none';
-}
-
-window.ToActivity = function(){
-  HomeText.hidden = true;
-  DayOfSSCC.hidden = true;
-  RoomOfMembers.hidden = true;
-  Activity.hidden = false;
-  Menutab.style.display = 'none';
-}
-
-Menuicon.addEventListener('click', function() {
+  (async function () {
+    const Home = document.getElementById("Home");
+    const DayOfSSCC = document.getElementById("The_Day_Of_SSCC");
+    const Activity = document.getElementById("Activity");
+    const RoomOfMembers = document.getElementById("Page_For_Members");
+    const UsefulURL = document.getElementById("usefulURL");
+    const Menutab = document.getElementById('menutab');
+    const Menuicon = document.getElementById('menuicon');
+   Menuicon.addEventListener('click', function() {
   if (Menutab.style.display === 'block') {
     Menutab.style.display = 'none';
   } else {
     Menutab.style.display = 'block';
   }
 });
+
+    function showSection(sectionId) {
+      const sections = [Home, DayOfSSCC, Activity, , RoomOfMembers];
+      sections.forEach((sec) => (sec.hidden = sec.id !== sectionId));
+      Menuicon.style.display = 'none';
+    }
+
+    showSection("Home");
+
+    window.ToHome = () => showSection("Home");
+    window.ToDayOfSSCC = () => showSection("DayOfSSCC");
+    window.ToRoomOfMembers = () => showSection("RoomOfMembers");
+    window.ToActivity = () => showSection("Activity");
+    window.ToUsefulURL = () => showSection("usefulURL");
