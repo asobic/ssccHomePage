@@ -87,6 +87,15 @@ footer{
   cursor: pointer;
   font-size: clamp(16px, 5vw, 28px); 
 }
+.batsu{
+  float: right;
+  margin: 5vw; 
+  text-decoration: none;
+  padding: 20px;
+  margin-left: 0;
+  cursor: pointer;
+  font-size: clamp(16px, 5vw, 28px); 
+}
 
 .yokonarabiheader {
   display: flex;
@@ -127,8 +136,4 @@ header img{
     z-index: 1001; 
                 }
 }
-.batsu{
-  float: right;
-  margin-right: 5vw; 
-  
-}
+
