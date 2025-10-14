@@ -25,5 +25,4 @@
     window.ToDayOfSSCC = () => showSection("DayOfSSCC");
     window.ToRoomOfMembers = () => showSection("RoomOfMembers");
     window.ToActivity = () => showSection("Activity");
-    window.ToUsefulURL = () => showSection("usefulURL");
   })();
