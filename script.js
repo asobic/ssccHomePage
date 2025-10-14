@@ -1,57 +1,36 @@
-const HomeText = document.getElementById('Home');
-const DayOfSSCC = document.getElementById("The_Day_Of_SSCC");
-const RoomOfMembers = document.getElementById("Page_For_Members");
-const Activity = document.getElementById("Activity");
+const sections = {
+  Home: document.getElementById('Home'),
+  The_Day_Of_SSCC: document.getElementById('The_Day_Of_SSCC'),
+  Page_For_Members: document.getElementById('Page_For_Members'),
+  Activity: document.getElementById('Activity')
+};
+
 const Menutab = document.getElementById('menutab');
 const Menuicon = document.getElementById('menuicon');
 
-window.onload = function() {
-  HomeText.hidden = false;
-  DayOfSSCC.hidden = true;
-  RoomOfMembers.hidden = true;
-  Activity.hidden = true;
-}
+// 初期表示設定
+window.onload = () => showSection('Home');
 
-window.ToHome = function(){
-  HomeText.hidden = false;
-  DayOfSSCC.hidden = true;
-  RoomOfMembers.hidden = true;
-  Activity.hidden = true;
-  Menutab.style.display = 'none';
-}
-
-window.ToDayOfSSCC = function(){
-  HomeText.hidden = true;
-  DayOfSSCC.hidden = false;
-  RoomOfMembers.hidden = true;
-  Activity.hidden = true;
-  Menutab.style.display = 'none';
-}
-
-window.ToRoomOfMembers = function(){
-  HomeText.hidden = true;
-  DayOfSSCC.hidden = true;
-  RoomOfMembers.hidden = false;
-  Activity.hidden = true;
-  Menutab.style.display = 'none';
-}
-
-window.ToActivity = function(){
-  HomeText.hidden = true;
-  DayOfSSCC.hidden = true;
-  RoomOfMembers.hidden = true;
-  Activity.hidden = false;
-  Menutab.style.display = 'none';
-}
-
-Menuicon.addEventListener('click', function() {
-  if (Menutab.style.display === 'block') {
-    Menutab.style.display = 'none';
-  } else {
-    Menutab.style.display = 'block';
+// セクション表示切り替え関数
+function showSection(sectionId) {
+  for (const id in sections) {
+    sections[id].hidden = id !== sectionId;
   }
+  Menutab.style.display = 'none';
+}
+
+// 各セクションへのナビゲーション関数
+window.ToHome = () => showSection('Home');
+window.ToDayOfSSCC = () => showSection('The_Day_Of_SSCC');
+window.ToRoomOfMembers = () => showSection('Page_For_Members');
+window.ToActivity = () => showSection('Activity');
+
+// メニューアイコンのクリックイベント
+Menuicon.addEventListener('click', () => {
+  Menutab.style.display = Menutab.style.display === 'block' ? 'none' : 'block';
 });
-  function batsu() {
+
+// メニューを閉じる関数
+window.batsu = () => {
   Menutab.style.display = 'none';
-  }
- 
+};
