@@ -51,4 +51,7 @@ Menuicon.addEventListener('click', function() {
     Menutab.style.display = 'block';
   }
 });
-
+  function batsu() {
+  Menutab.style.display = 'none';
+  }
+ 
