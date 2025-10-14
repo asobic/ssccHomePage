@@ -49,8 +49,6 @@ footer{
   width: 60px;
   height: 44px;
   padding: 10px;
-  z-index: 9999;
-
 }
 
 .menu-icon span {
@@ -59,7 +57,6 @@ footer{
   background-color: #333;
   border-radius: 4px;
   color: white;
-  z-index: 999;
 }
 
 
@@ -111,7 +108,7 @@ header img{
   justify-content: space-between;
   cursor: pointer;
   padding: 5px;
-  z-index: 9999;
+
 }
 
 .menu-icon span {
@@ -120,6 +117,6 @@ header img{
   background-color: #333;
   border-radius: 2px;
   color: white;
-  z-index: 9999;
+  
 }
 }
