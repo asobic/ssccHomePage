@@ -128,5 +128,7 @@ header img{
                 }
 }
 .batsu{
-
+  float: right;
+  margin-right: 5vw; 
+  
 }
