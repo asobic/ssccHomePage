@@ -49,6 +49,7 @@ footer{
   width: 60px;
   height: 44px;
   padding: 10px;
+    z-index: 1001; 
 }
 
 .menu-icon span {
@@ -57,6 +58,7 @@ footer{
   background-color: #333;
   border-radius: 4px;
   color: white;
+  z-index: 1001; 
 }
 
 
@@ -94,6 +96,7 @@ header img{
   justify-content: center;
   max-width: 70vw;
   height: auto;
+  z-index: 1000; 
 }
 
 @media screen and (max-width: 768px) {
@@ -108,7 +111,7 @@ header img{
   justify-content: space-between;
   cursor: pointer;
   padding: 5px;
-
+  z-index: 1001; 
 }
 
 .menu-icon span {
@@ -117,6 +120,7 @@ header img{
   background-color: #333;
   border-radius: 2px;
   color: white;
+    z-index: 1001; 
                 }
 }
 .batsu{
