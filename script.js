@@ -7,10 +7,10 @@ const sections = {
 
 const Menutab = document.getElementById('menutab');
 const Menuicon = document.getElementById('menuicon');
-const home = document.getElementsByClassName('home');
-const today = document.getElementsByClassName('today');
-const  toroom = document.getElementsByClassName('toroom');
-const activity = document.getElementsByClassName('activity');
+const home = document.querySelector('.home');
+const today = document.querySelector('.today');
+const toroom = document.querySelector('.toroom');
+const activity = document.querySelector('.activity');
 // 初期表示設定
 window.onload = () => showSection('Home');
 
