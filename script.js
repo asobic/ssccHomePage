@@ -1,7 +1,7 @@
 const sections = {
   Home: 'Home',
-  DayOfSSCC: 'The_Day_Of_SSCC',
-  RoomOfMembers: 'Page_For_Members',
+  ClubDay: 'ClubDay',
+  MemberRoom: 'MemberRoom',
   Activity: 'Activity'
 };
 
