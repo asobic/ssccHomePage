@@ -1,60 +1,29 @@
 const sections = {
-  Home: document.getElementById('Home'),
-  The_Day_Of_SSCC: document.getElementById('The_Day_Of_SSCC'),
-  Page_For_Members: document.getElementById('Page_For_Members'),
-  Activity: document.getElementById('Activity')
+  Home: 'Home',
+  DayOfSSCC: 'The_Day_Of_SSCC',
+  RoomOfMembers: 'Page_For_Members',
+  Activity: 'Activity'
 };
 
 const Menutab = document.getElementById('menutab');
 const Menuicon = document.getElementById('menuicon');
-const home = document.querySelector('.home');
-const today = document.querySelector('.today');
-const toroom = document.querySelector('.toroom');
-const activity = document.querySelector('.activity');
-// 初期表示設定
+
+// 初期表示
 window.onload = () => showSection('Home');
 
-// セクション表示切り替え関数
+// セクション表示切り替え
 function showSection(sectionId) {
-  for (const id in sections) {
-    sections[id].hidden = id !== sectionId;
-  }
+  Object.keys(sections).forEach(id => {
+    document.getElementById(id).hidden = id !== sectionId;
+    document.querySelector(`.${sections[id]}`).style.color = id === sectionId ? 'red' : 'black';
+  });
   Menutab.style.display = 'none';
 }
 
-// 各セクションへのナビゲーション関数
- window.ToHome = () => {
-  showSection('Home');
-  home.style.color = 'red';
-  today.style.color = 'black';
-  toroom.style.color = 'black';
-  activity.style.color = 'black';
-};
-
-window.ToDayOfSSCC = () => {
-  showSection('The_Day_Of_SSCC');
-  home.style.color = 'black';
-  today.style.color = 'red';
-  toroom.style.color = 'black';
-  activity.style.color = 'black';
-};
-
-window.ToRoomOfMembers = () => {
-  showSection('Page_For_Members');
-  home.style.color = 'black';
-  today.style.color = 'black';
-  toroom.style.color = 'red';
-  activity.style.color = 'black';
-};
-
-window.ToActivity = () => {
-  showSection('Activity');
-  home.style.color = 'black';
-  today.style.color = 'black';
-  toroom.style.color = 'black';
-  activity.style.color = 'red';
-};
-
+// ナビゲーション関数を自動生成
+Object.keys(sections).forEach(id => {
+  window[`To${id}`] = () => showSection(id);
+});
 
 // メニューアイコンのクリックイベント
 Menuicon.addEventListener('click', () => {
