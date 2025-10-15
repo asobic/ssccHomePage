@@ -23,38 +23,38 @@ function showSection(sectionId) {
 }
 
 // 各セクションへのナビゲーション関数
- 
-window.ToHome = () => {
+ window.ToHome = () => {
   showSection('Home');
   home.style.color = 'red';
-  today.style.color = 'white';
-  toroom.style.color = 'white';
-  activity.style.color = 'white';
+  today.style.color = 'black';
+  toroom.style.color = 'black';
+  activity.style.color = 'black';
 };
 
 window.ToDayOfSSCC = () => {
   showSection('The_Day_Of_SSCC');
-  home.style.color = 'white';
+  home.style.color = 'black';
   today.style.color = 'red';
-  toroom.style.color = 'white';
-  activity.style.color = 'white';
+  toroom.style.color = 'black';
+  activity.style.color = 'black';
 };
 
 window.ToRoomOfMembers = () => {
   showSection('Page_For_Members');
-  home.style.color = 'white';
-  today.style.color = 'white';
+  home.style.color = 'black';
+  today.style.color = 'black';
   toroom.style.color = 'red';
-  activity.style.color = 'white';
+  activity.style.color = 'black';
 };
 
 window.ToActivity = () => {
   showSection('Activity');
-  home.style.color = 'white';
-  today.style.color = 'white';
-  toroom.style.color = 'white';
+  home.style.color = 'black';
+  today.style.color = 'black';
+  toroom.style.color = 'black';
   activity.style.color = 'red';
 };
+
 
 // メニューアイコンのクリックイベント
 Menuicon.addEventListener('click', () => {
