@@ -1,12 +1,10 @@
 body{
-  background: radial-gradient(at 20% 70%, #83cde7, transparent),
-              radial-gradient(at 50% 30%, #f480d5, transparent),
-              radial-gradient(at 80% 80%, #b7f179, transparent);
+
+      background: radial-gradient(at 20% 70%, #83cde7, transparent), radial-gradient(at 50% 30%, #f480d5, transparent), radial-gradient(at 80% 80%, #b7f179, transparent);
+ 
   background-size: cover;
   font-family: sans-serif;
-
 }
-
 .heading{
   display: flex;
 }
@@ -19,11 +17,9 @@ button{
   font-size: 16px;
   cursor: pointer;
 }
-
 .Buttons{
   display: flex;
 }
-
 .Greeting{
   text-align: center;
 }
@@ -39,31 +35,27 @@ button{
 
 
 footer{
-  background-color: navy;
-  background-size: cover;
-  padding-right: 24px;
-  padding-left: 24px;
-  color: white;
+    background-color: navy;
+    background-size: cover;
+    padding-right: 24px;
+    padding-left: 24px;
+    color: white;
 }
-.menu-icon {
-  width:30px;
-  height: 22px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  cursor: pointer;
-  padding: 5px;
-  z-index: 1001; 
+  .menu-icon {
+  width: 60px;
+  height: 44px;
+  padding: 10px;
+  display: none;
 }
 
 .menu-icon span {
   display: block;
-  height: 4px;
+  height: 8px;
   background-color: #333;
-  border-radius: 2px;
+  border-radius: 4px;
   color: white;
-    z-index: 1001; 
-                }
+  display:none;
+}
 
 
 .menutab{
@@ -74,7 +66,7 @@ footer{
   width: 500vw;        
   height: 500vh;          
   background: white;
-  z-index: 10000;           /* 他の要素より前に出す */
+  z-index: 1000;           /* 他の要素より前に出す */
   overflow-y: auto;        /* 内容が多いときスクロールできるように */
 }
 
@@ -88,7 +80,6 @@ footer{
   font-size: clamp(16px, 5vw, 28px); 
 }
 
-
 .yokonarabiheader {
   display: flex;
   justify-content: space-between;  
@@ -101,14 +92,15 @@ header img{
   justify-content: center;
   max-width: 70vw;
   height: auto;
-  z-index: 1000; 
 }
 
 @media screen and (max-width: 768px) {
   .Buttons {
     display: none;
   }
+
 .menu-icon {
+  display: block;
   width: 30px;
   height: 22px;
   display: flex;
@@ -116,7 +108,7 @@ header img{
   justify-content: space-between;
   cursor: pointer;
   padding: 5px;
-  z-index: 1001; 
+
 }
 
 .menu-icon span {
@@ -125,7 +117,6 @@ header img{
   background-color: #333;
   border-radius: 2px;
   color: white;
-    z-index: 1001; 
                 }
 }
 
