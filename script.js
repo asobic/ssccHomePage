@@ -25,13 +25,13 @@ function showSection(sectionId) {
     }
 
     // タブの色とスタイル変更
-    if (sectionEl) {
+    if (tabEl) {
       if (id === sectionId) {
-        sectionEl.style.color = 'red';
-        sectionE1El.style.fontWeight = 'bold';
+        tabE1.style.color = 'red';
+        tabEl.style.fontWeight = 'bold';
       } else {
-        sectionE1.style.color = 'black';
-        sectionEl.style.fontWeight = 'normal';
+        tabE1.style.color = 'black';
+        tabE1.style.fontWeight = 'normal';
       }
     }
   });
