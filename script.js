@@ -7,7 +7,10 @@ const sections = {
 
 const Menutab = document.getElementById('menutab');
 const Menuicon = document.getElementById('menuicon');
-
+const home = document.getElementsByClassName('home');
+const today = document.getElementsByClassName('today');
+const  toroom = document.getElementsByClassName('toroom');
+const activity = document.getElementsByClassName('activity');
 // 初期表示設定
 window.onload = () => showSection('Home');
 
@@ -20,36 +23,37 @@ function showSection(sectionId) {
 }
 
 // 各セクションへのナビゲーション関数
+ 
 window.ToHome = () => {
   showSection('Home');
-  Home.style.color = 'red';
-  The_Day_Of_SSCC.style.color = 'white';
-  Page_For_Members.style.color = 'white';
-  Activity.style.color = 'white';
+  home.style.color = 'red';
+  today.style.color = 'white';
+  toroom.style.color = 'white';
+  activity.style.color = 'white';
 };
 
 window.ToDayOfSSCC = () => {
   showSection('The_Day_Of_SSCC');
-  Home.style.color = 'white';
-  The_Day_Of_SSCC.style.color = 'red';
-  Page_For_Members.style.color = 'white';
-  Activity.style.color = 'white';
+  home.style.color = 'white';
+  today.style.color = 'red';
+  toroom.style.color = 'white';
+  activity.style.color = 'white';
 };
 
 window.ToRoomOfMembers = () => {
   showSection('Page_For_Members');
-  Home.style.color = 'white';
-  The_Day_Of_SSCC.style.color = 'white';
-  Page_For_Members.style.color = 'red';
-  Activity.style.color = 'white';
+  home.style.color = 'white';
+  today.style.color = 'white';
+  toroom.style.color = 'red';
+  activity.style.color = 'white';
 };
 
 window.ToActivity = () => {
   showSection('Activity');
-  Home.style.color = 'white';
-  The_Day_Of_SSCC.style.color = 'white';
-  Page_For_Members.style.color = 'white';
-  Activity.style.color = 'red';
+  home.style.color = 'white';
+  today.style.color = 'white';
+  toroom.style.color = 'white';
+  activity.style.color = 'red';
 };
 
 // メニューアイコンのクリックイベント
