@@ -24,7 +24,7 @@ function showSection(sectionId) {
     }
 
     // 対象のタブをすべて取得（button と a）
-    const tabEls = document.querySelectorAll(".class${sections[id]}");
+    const tabEls = document.querySelectorAll(`.class${sections[id]}`);
     tabEls.forEach(tabEl => {
       if (id === sectionId) {
         tabEl.style.color = 'red';
@@ -41,7 +41,7 @@ function showSection(sectionId) {
 
 // ナビゲーション関数を自動生成（ToHome(), ToActivity() など）
 Object.keys(sections).forEach(id => {
-  window[To${id}] = () => showSection(id);
+  window[`To${id}`] = () => showSection(id);
 });
 
 // メニューアイコンのクリックイベント
