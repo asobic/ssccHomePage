@@ -24,7 +24,7 @@ function showSection(sectionId) {
     }
 
     // 対象のタブをすべて取得（button と a）
-    const tabEls = document.querySelectorAll(.class${sections[id]});
+    const tabEls = document.querySelectorAll(".class${sections[id]}");
     tabEls.forEach(tabEl => {
       if (id === sectionId) {
         tabEl.style.color = 'red';
