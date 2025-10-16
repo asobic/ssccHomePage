@@ -17,15 +17,15 @@ document.addEventListener('DOMContentLoaded', () => {
 function showSection(sectionId) {
   Object.keys(sections).forEach(id => {
     const sectionEl = document.getElementById(id);
-    const tabEl = document.querySelector(`.class${sections[id]}`);
 
     // セクションの表示・非表示
     if (sectionEl) {
       sectionEl.hidden = id !== sectionId;
     }
 
-    // タブの色とスタイル変更
-    if (tabEl) {
+    // 対象のタブをすべて取得（button と a）
+    const tabEls = document.querySelectorAll(`.class${sections[id]}`);
+    tabEls.forEach(tabEl => {
       if (id === sectionId) {
         tabEl.style.color = 'red';
         tabEl.style.fontWeight = 'bold';
@@ -33,10 +33,9 @@ function showSection(sectionId) {
         tabEl.style.color = 'black';
         tabEl.style.fontWeight = 'normal';
       }
-    }
+    });
   });
 
-  // メニューを自動で閉じる
   if (Menutab) Menutab.style.display = 'none';
 }
 
