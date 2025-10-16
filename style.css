@@ -119,6 +119,18 @@ header img{
   color: white;
                 }
 }
-.home{
- color: red;
+#menutab {
+  position: fixed;
+  top: 0;
+  right: -300px; /* 初期状態は画面外 */
+  width: 300px;
+  height: 100%;
+  background-color: white;
+  transition: right 0.3s ease;
+  z-index: 1000;
+}
+
+/* 表示状態 */
+#menutab.active {
+  right: 0;
 }
