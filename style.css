@@ -126,7 +126,7 @@ header img{
   width: 300px;
   height: 100%;
   background-color: white;
-  transition: right 0.3s ease;
+  transition: right 0.7s ease;
   z-index: 1000;
 }
 
