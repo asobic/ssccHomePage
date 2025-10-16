@@ -119,23 +119,3 @@ header img{
   color: white;
                 }
 }
-/* menutab の初期状態とアニメーション */
-#menutab {
-  position: fixed;
-  top: 0;
-  right: -300px; /* 画面外に隠す */
-  width: 300px;
-  height: 100%;
-  background-color: white;
-  transition: right 0.5s ease;
-  z-index: 1000;
-  overflow-y: auto;
-  display: block; /* display: none を削除して常に存在させる */
-  visibility: hidden; /* 初期状態は非表示 */
-}
-
-/* 表示状態 */
-#menutab.active {
-  right: 0;
-  visibility: visible;
-}
