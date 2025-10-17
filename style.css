@@ -1,5 +1,16 @@
 body {
-  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: radial-gradient(circle at 20% 30%, #b7f179 0%, transparent 40%),
+              radial-gradient(circle at 80% 20%, #f480d5 0%, transparent 40%),
+              radial-gradient(circle at 50% 70%, #83cde7 0%, transparent 40%),
+              radial-gradient(circle at 30% 80%, #c5b3f4 0%, transparent 40%);
+  background-color: #fefefe;
+  background-blend-mode: screen;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Segoe UI', sans-serif;
 }
 
 button {
@@ -56,8 +67,8 @@ button {
 
 .Buttons {
   display: flex;
+  color: white;
   background-color: #4169e1;
-  backgroun-size: cover;
 }
 
 .Greeting {
@@ -80,23 +91,19 @@ footer {
   color: white;
 }
 
-/* ▼ メニュータブ */
 .menutab {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 0;
-  background: white;
   opacity: 0;
   overflow: hidden;
   pointer-events: none;
   transition: height 0.4s ease, opacity 0.4s ease;
   z-index: 1000;
   background-color: #4169e1;
-  background-size: cover;
 }
-
 .menutab.active {
   height: 100vh;
   opacity: 1;
@@ -113,11 +120,10 @@ footer {
   font-size: clamp(16px, 5vw, 28px);
 }
 
-/* ▼ ヘッダー関連 */
 .yokonarabiheader {
   display: flex;
   justify-content: space-between;
-  align-items: center; /* ← top → center に修正 */
+  align-items: center; /* ← 修正: top → center */
   width: 100%;
   background-image: url("0.png");
   background-size: cover;
@@ -125,18 +131,18 @@ footer {
 
 header img {
   cursor: pointer;
+  display: block;
   max-width: 70vw;
   height: auto;
 }
 
-/* ▼ スマホ表示 */
+/* ▼ スマホ（768px以下） */
 @media screen and (max-width: 768px) {
   .Buttons {
     display: none;
   }
 
   .menu-icon {
-    display: block;
     width: 30px;
     height: 22px;
     display: flex;
@@ -145,6 +151,7 @@ header img {
     cursor: pointer;
     padding: 5px;
   }
+
   .menu-icon span {
     display: block;
     height: 4px;
@@ -154,18 +161,24 @@ header img {
   }
 }
 
+/* ▼ PC（768px以上）でロゴを中央配置 */
 @media screen and (min-width: 768px) {
   .yokonarabiheader {
     justify-content: center;
     position: relative;
   }
+
   .menus {
     position: absolute;
     right: 20px;
     top: 10px;
   }
+
   header img {
-    display: block;
     margin: 0 auto;
   }
+}
+
+section {
+  transition: opacity 0.3s ease;
 }
