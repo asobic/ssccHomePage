@@ -86,16 +86,23 @@ footer{
     color: white;
 }
 
-.menutab{
-  display: none;
-  position: fixed;         /*ページ全体に固定 */
+.menutab {
+  position: fixed;
   top: 0;
   left: 0;
-  width: 500vw;        
-  height: 500vh;          
+  width: 100vw;
+  height: 100vh;
   background: white;
-  z-index: 1000;           /* 他の要素より前に出す */
-  overflow-y: auto;        /* 内容が多いときスクロールできるように */
+  opacity: 0;
+  transform: translateY(-20px); /* 上から少しスライドしてくる感じ */
+  pointer-events: none; /* 非表示時はクリックできないように */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 1000;
+}
+.menutab.active {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto; /* 表示時はクリック可能に */
 }
 
 .menutab a{
