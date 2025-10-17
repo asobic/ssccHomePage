@@ -120,6 +120,7 @@ header img{
   justify-content: center;
   max-width: 70vw;
   height: auto;
+  text-align: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -146,4 +147,7 @@ header img{
   border-radius: 2px;
   color: white;
                 }
+}
+header img{
+      text-align: left;
 }
