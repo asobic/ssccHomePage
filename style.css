@@ -1,11 +1,12 @@
-body{
-
-      background: radial-gradient(at 20% 70%, #83cde7, transparent), radial-gradient(at 50% 30%, #f480d5, transparent), radial-gradient(at 80% 80%, #b7f179, transparent);
- 
+body {
+  background: radial-gradient(at 20% 70%, #83cde7, transparent),
+              radial-gradient(at 50% 30%, #f480d5, transparent),
+              radial-gradient(at 80% 80%, #b7f179, transparent);
   background-size: cover;
   font-family: sans-serif;
 }
-.heading{
+
+.heading {
   display: flex;
 }
 
@@ -61,101 +62,112 @@ button {
   }
 }
 
-.Buttons{
+.Buttons {
   display: flex;
 }
-.Greeting{
+
+.Greeting {
   text-align: center;
 }
 
-.About_Us{
+.About_Us {
   text-align: left;
 }
 
-.What_We_Do{
+.What_We_Do {
   text-align: right;
 }
 
-
-
-footer{
-    background-color: navy;
-    background-size: cover;
-    padding-right: 24px;
-    padding-left: 24px;
-    color: white;
+footer {
+  background-color: navy;
+  background-size: cover;
+  padding-right: 24px;
+  padding-left: 24px;
+  color: white;
 }
 
+/* ▼ メニュータブ */
 .menutab {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
-  height: 0;                  /* ← 初期状態は高さゼロ */
+  height: 0;
   background: white;
   opacity: 0;
-  overflow: hidden;            /* ← 中身を隠す */
-  pointer-events: none;        /* 非表示時はクリック無効 */
+  overflow: hidden;
+  pointer-events: none;
   transition: height 0.4s ease, opacity 0.4s ease;
   z-index: 1000;
 }
 
 .menutab.active {
-  height: 100vh;               /* ← 開いたときに全体まで展開 */
+  height: 100vh;
   opacity: 1;
   pointer-events: auto;
 }
 
-.menutab a{
+.menutab a {
   display: flex;
   flex-direction: column;
   text-decoration: none;
   padding: 20px;
   margin: 5vw;
   cursor: pointer;
-  font-size: clamp(16px, 5vw, 28px); 
+  font-size: clamp(16px, 5vw, 28px);
 }
 
+/* ▼ ヘッダー関連 */
 .yokonarabiheader {
   display: flex;
-  justify-content: space-between;  
-  align-items: top; 
+  justify-content: space-between;
+  align-items: center; /* ← top → center に修正 */
   width: 100%;
 }
-header img{
+
+header img {
   cursor: pointer;
-  display: flex;
-  justify-content: center;
   max-width: 70vw;
   height: auto;
-  text-align: center;
 }
 
+/* ▼ スマホ表示 */
 @media screen and (max-width: 768px) {
   .Buttons {
     display: none;
   }
 
-.menu-icon {
-  display: block;
-  width: 30px;
-  height: 22px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  cursor: pointer;
-  padding: 5px;
-
+  .menu-icon {
+    display: block;
+    width: 30px;
+    height: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 5px;
+  }
+  .menu-icon span {
+    display: block;
+    height: 4px;
+    background-color: #333;
+    border-radius: 2px;
+    color: white;
+  }
 }
 
-.menu-icon span {
-  display: block;
-  height: 4px;
-  background-color: #333;
-  border-radius: 2px;
-  color: white;
-                }
-}
-header img{
-      text-align: left;
+@media screen and (min-width: 768px) {
+  .yokonarabiheader {
+    justify-content: center;
+    position: relative;
+  }
+  .menus {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+  }
+  header img {
+    display: block;
+    margin: 0 auto;
+  }
 }
