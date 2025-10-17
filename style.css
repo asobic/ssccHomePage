@@ -15,6 +15,7 @@ body {
 main{
     margin-right: 5vw;
   margin-left: 5vw;}
+  background-image: url("main.jpeg");
 p{
   margin:5vw;
 }
