@@ -2,12 +2,6 @@ body {
   font-family: sans-serif;
 }
 
-.heading {
-  display: flex;
-  background-image: url("0.png");
-  background-size: cover;
-}
-
 button {
   padding: 0;
   font-family: inherit;
@@ -62,7 +56,7 @@ button {
 
 .Buttons {
   display: flex;
-  background-color: #4139e1;
+  background-color: #4169e1;
   backgroun-size: cover;
 }
 
@@ -99,6 +93,7 @@ footer {
   pointer-events: none;
   transition: height 0.4s ease, opacity 0.4s ease;
   z-index: 1000;
+  background-color: #4169e1;
 }
 
 .menutab.active {
@@ -123,6 +118,8 @@ footer {
   justify-content: space-between;
   align-items: center; /* ← top → center に修正 */
   width: 100%;
+  background-image: url("0.png");
+  background-size: cover;
 }
 
 header img {
