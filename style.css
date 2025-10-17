@@ -94,6 +94,7 @@ footer {
   transition: height 0.4s ease, opacity 0.4s ease;
   z-index: 1000;
   background-color: #4169e1;
+  background-size: cover;
 }
 
 .menutab.active {
