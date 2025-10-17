@@ -36,7 +36,7 @@ function showSection(sectionId) {
     });
   });
 
-  if (Menutab) Menutab.style.display = 'none';
+  if (Menutab) Menutab.classList.remove('active');
 }
 
 // ナビゲーション関数を自動生成（ToHome(), ToActivity() など）
@@ -44,14 +44,13 @@ Object.keys(sections).forEach(id => {
   window[`To${id}`] = () => showSection(id);
 });
 
-// メニューアイコンのクリックイベント
+
 if (Menuicon && Menutab) {
   Menuicon.addEventListener('click', () => {
-    Menutab.style.display = Menutab.style.display === 'block' ? 'none' : 'block';
+    Menutab.classList.toggle('active');
   });
 }
 
-// メニューを閉じる関数
 window.batsu = () => {
-  if (Menutab) Menutab.style.display = 'none';
+  if (Menutab) Menutab.classList.remove('active');
 };
