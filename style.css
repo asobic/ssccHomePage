@@ -15,9 +15,7 @@ body {
 p{
   margin:5vw;
 }
-h4{
-  padding:5vw;
-}
+
 button {
   padding: 0;
   font-family: inherit;
@@ -82,10 +80,12 @@ button {
 
 .About_Us {
   text-align: left;
+  margin-left: 5vw;
 }
 
 .What_We_Do {
   text-align: right;
+   margin-right: 5vw
 }
 
 footer {
