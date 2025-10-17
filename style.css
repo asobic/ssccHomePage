@@ -8,6 +8,8 @@ body {
 
 .heading {
   display: flex;
+  background-image: url("0.png");
+  background-size: cover;
 }
 
 button {
@@ -45,7 +47,7 @@ button {
   width: 100%;
   height: 2px;
   content: "";
-  background-color: #6fa24a;
+  background-color: orange;
   transform: scaleX(0);
   transform-origin: right top;
 }
@@ -64,6 +66,8 @@ button {
 
 .Buttons {
   display: flex;
+  background-color: #4139e1;
+  backgroun-size: cover;
 }
 
 .Greeting {
