@@ -15,7 +15,7 @@ main{
   background-image: url("main.jpeg");
   }
 header, main, footer {
-  margin: 0 auto;
+
   padding: 0 5vw; 
   box-sizing: border-box;
   }
