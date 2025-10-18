@@ -11,6 +11,12 @@ main {
   background-size: cover;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
 header, main, footer {
   padding-right: 5vw;
   padding-left: 5vw;
