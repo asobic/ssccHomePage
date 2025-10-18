@@ -4,7 +4,6 @@ body {
   padding: 0pxx;
   height: 100vh;
   font-family: 'Segoe UI', sans-serif;
-  background-size: cover;
 }
 
 main {
@@ -13,7 +12,6 @@ main {
 }
 
 header, main, footer {
-  padding: 0 5vw;
   width: 100%;
 }
 
@@ -203,7 +201,6 @@ section {
 footer {
   background-color: navy;
   background-size: cover;
-  padding: 0 24px;
   color: white;
   margin: 0;
 }
