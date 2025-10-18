@@ -117,7 +117,6 @@ button {
 header img {
   cursor: pointer;
   display: block;
-  max-width: 70vw;
   height: auto;
 }
 
