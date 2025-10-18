@@ -12,7 +12,8 @@ main {
 }
 
 header, main, footer {
-  padding: 5vw;
+  padding-right: 5vw;
+  padding-left: 5vw;
 }
 
 /* ====== ボタンスタイル ====== */
