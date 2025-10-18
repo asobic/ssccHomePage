@@ -1,15 +1,4 @@
 body {
-  padding: 0;
-  margin: 0;
-  height: 100vh;
-  background: radial-gradient(circle at 20% 30%, #b7f179 0%, transparent 40%),
-              radial-gradient(circle at 80% 20%, #f480d5 0%, transparent 40%),
-              radial-gradient(circle at 50% 70%, #83cde7 0%, transparent 40%),
-              radial-gradient(circle at 30% 80%, #c5b3f4 0%, transparent 40%);
-  background-color: #fefefe;
-  background-blend-mode: screen;
-  background-repeat: no-repeat;
-  background-size: cover;
   font-family: 'Segoe UI', sans-serif;
 }
 main{
